@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styles2.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w23comp1008s1w5memorygame.Rules">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="47.0" prefWidth="433.0" text="Перед игрой ознакомьтесь с правилами!">
+               <VBox.margin>
+                  <Insets left="90.0" />
+               </VBox.margin></Label>
+            <Label fx:id="rules" alignment="BASELINE_LEFT" prefHeight="277.0" prefWidth="500.0" text="" textAlignment="JUSTIFY">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin></Label>
+            <Button fx:id="playWar" mnemonicParsing="false" onAction="#playWar" text="Начать игру">
+               <VBox.margin>
+                  <Insets left="230.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

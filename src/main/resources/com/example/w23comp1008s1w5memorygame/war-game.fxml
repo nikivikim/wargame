@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w23comp1008s1w5memorygame.WarGameController">
+   <children>
+      <BorderPane prefHeight="650.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="nameText1" />
+                  <Label fx:id="name1" />
+                  <ImageView fitHeight="281.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back_of_card.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="p1CardCountLabel" text="Cards: 26" />
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="nameText2" />
+                  <Label fx:id="name2" />
+                  <ImageView fitHeight="281.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back_of_card.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="p2CardCountLabel" text="Cards: 26" />
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <StackPane BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="p1ImageView" fitHeight="281.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/2_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="pullCardCountLabel" text="Колода">
+                           <HBox.margin>
+                              <Insets top="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fx:id="p2ImageView" fitHeight="281.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/2_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label id="winnerLabel" fx:id="winnerLabel" rotate="-45.0" text="Label" />
+               </children>
+            </StackPane>
+         </center>
+         <bottom>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="inputName" mnemonicParsing="false" onAction="#inputName" text="Ввести игроков" />
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#playHand" prefWidth="260.0" text="Начать игру" />
+                  <Button fx:id="playAgainButton" mnemonicParsing="false" onAction="#newGame" prefWidth="260.0" text="Играть заново" />
+               </children>
+            </FlowPane>
+         </bottom>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>
